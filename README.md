@@ -12,3 +12,9 @@ A aplicação deve atender os seguintes requisitos:
 > Tela de cadastro/edição
 
 > Exclusão de produtos
+
+## Instruções para execução
+
+Ordem de execução
+
+> 1. [Backend] (./server)
