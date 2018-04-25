@@ -17,6 +17,6 @@ A aplicação deve atender os seguintes requisitos:
 
 Ordem de execução
 
-> 1. [Backend] (./server)
+> 1. [Backend](./server)
 
-> 2. [Frontend] (./client)
+> 2. [Frontend](./client)
