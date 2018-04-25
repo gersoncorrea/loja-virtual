@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="api">
+    <head>
+        <meta charset="UTF-8">
+        <base href="/">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width">
+        <title>Produos</title>
+        <link rel="stylesheet" href="js/lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        
+        <script src="js/lib/angular/angular.min.js"></script>
+        <script src="js/lib/angular-route/angular-route.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/service/request.service.js"></script>
+        <script src="js/service/pagination.service.js"></script>
+        <script src="js/directive/upload.directive.js"></script>
+        <script src="js/controller/home.controller.js"></script>
+        <script src="js/controller/cadastrar.controller.js"></script>
+        <script src="js/controller/produto.editcontroller.js"></script>        
+        
+    </head>
+    <body>
+        <div class="container">
+            
+            <ng-view></ng-view>
+
+        </div> <!-- fim container -->        
+    </body>
+</html>

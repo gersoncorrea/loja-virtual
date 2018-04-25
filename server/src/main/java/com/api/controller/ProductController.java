@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,6 +26,7 @@ import com.api.repository.ProductRepository;
  * @author gerson
  *
  */
+@CrossOrigin(origins="http://localhost:3001")
 @RestController
 @RequestMapping("/api")
 public class ProductController {
@@ -59,10 +61,9 @@ public class ProductController {
 		Product updateProduct = productRepository.save(product);
 		return updateProduct;
 	}
-	
-	
+		
 	@DeleteMapping("/product/{id}")
-	public ResponseEntity<?> deleteProduct(@PathVariable(value = "id") Long productId, @Valid @RequestBody Product productDetail) {
+	public ResponseEntity<?> deleteProduct(@PathVariable(value = "id") Long productId) {
 		Product product = productRepository.findById(productId)
 				.orElseThrow(()-> new ResourceNotFoundException("Product", "id", productId));
 	

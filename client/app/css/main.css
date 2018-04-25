@@ -1,0 +1,41 @@
+body{
+  background: url('../img/bg.jpg') repeat fixed;
+}
+
+.middle-content{
+    background: #fff;
+    border-radius: 10px 10px  0 0;
+    box-shadow: #333 0 0 5px;
+    padding:1em;
+    overflow: hidden;
+}
+
+.animate{
+    -moz-transition:transform 0.8s;
+    -webkit-transition:transform 0.8s;
+    -ms-transition:transform 0.8s;
+    -o-transition:transform 0.8s;
+    transition:transform 0.8s;
+    min-height: 400px!important;
+}
+
+.animate.ng-leave-active{
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transform: scale(0.1);
+}
+
+.home-alert{
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+
+.error-404{
+    width: 692px;
+    height: 350px;
+    background: url('../img/404.jpg') center center no-repeat;
+    display: block;
+}

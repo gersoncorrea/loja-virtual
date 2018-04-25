@@ -1,0 +1,19 @@
+<div class="container">
+    
+<h1>{{title}}</h1>
+
+<form class="container" ng-submit="salvar()">
+    <div class="form-group">
+        <input class="form-control" type="text" ng-model="form.title" name="title" placeholder="Titulo"/>
+    </div>
+    
+    <div class="form-group">
+        <input class="form-control" type="text" ng-model="form.description" name="description" placeholder="Descrição">        
+    </div>
+
+    <a class="btn btn-default" href="/">Voltar</a>
+   
+    <input class="btn btn-primary" type="submit" id="submit" value="Salvar"/>
+</form>
+
+</div>
